@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ad7adbc1f5143eaa7e7f5048296b580, type: 3}
+  m_Name: Cross
+  m_EditorClassIdentifier: 
+  bullet: {fileID: -6504919013818152716, guid: 164e282f01526144486e222f629a1979, type: 3}
+  fireRate: 1
+  shootingForce: 30
