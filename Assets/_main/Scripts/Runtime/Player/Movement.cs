@@ -25,14 +25,11 @@ namespace Runtime.Player
 
         public void Move(Vector2 axes)
         {
-            // Get the character's forward and right directions
             Vector3 forward = characterTransform.forward;
             Vector3 right = characterTransform.right;
 
-            // Calculate the direction to move based on input and character orientation
             Vector3 direction = (forward * axes.y + right * axes.x).normalized;
 
-            // Move the character controller in the calculated direction
             characterController.Move(direction * (movementSpeed * Time.deltaTime));
         }
 
@@ -43,7 +40,7 @@ namespace Runtime.Player
 
             float pitch = axes.y * pitchSpeed * Time.deltaTime;
             xRotation -= pitch;
-            xRotation = Mathf.Clamp(xRotation, -90f, 90f); // Clamp the pitch to avoid flipping
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
             cameraTransform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         }
     }
